@@ -10,7 +10,8 @@ Ek simple calculator jo terminal me chalta hai. OOP concept use kiya hai.
 - Class + Object use kiyaa hai 
 
 ### **Screenshot** 📸
-![Calculator Output](ProjectScreenshot_20260609-085239.jpg)
+![Calculator Output](Screenshot_20260609-085239.jpg)
 
 **Language**: C++  
 **Made by**: Ankita Koundal
+Screenshot_20260609-085239.jpg
