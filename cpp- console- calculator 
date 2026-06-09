@@ -1,47 +1,56 @@
 #include <iostream>
 using namespace std;
 
-class Calculator {
+class Calculator
+ {
 private:
     double formula;
 
 public:
     double num1, num2;
 
-    void setformula(double f) {
+    void setformula(double f)
+ {
         formula = f;
     }
     
-    double getformula() {
-        return formula;  // {} hata diya
+    double getformula() 
+{
+        return formula;  
     }
 
-    void add(double a, double b) {
+    void add(double a, double b) 
+{
         formula = a + b;
         cout << a << "+" << b << "=" << formula << endl;
     }
 
-    void sub(double a, double b) {
+    void sub(double a, double b) 
+{
         formula = a - b;
         cout << a << "-" << b << "=" << formula << endl;
     }
 
-    void mul(double a, double b) {
+    void mul(double a, double b)
+ {
         formula = a * b;
         cout << a << "*" << b << "=" << formula << endl;
     }
 
     void div(double a, double b) {
-        if(b != 0) {  // 0 se divide nahi hoga
+        if(b == 0)
+ {
             formula = a / b;
             cout << a << "/" << b << "=" << formula << endl;
         }
-        else {
+        else
+ {
             cout << "Error : 0 se divide nahi hota!" << endl;
         }
     }
 
-    void display() {  // ye function add kar diya
+    void display() 
+{  
         cout << "Current formula value: " << formula << endl;
     }
 };
@@ -52,7 +61,7 @@ int main() {
     calc.sub(20, 10);
     calc.mul(20, 10);
     calc.div(20, 10);
-    calc.div(20, 0);  // test karne ke liye 0 se divide
+    calc.div(20, 0);  
     calc.setformula(100);
     calc.display();
     return 0;
