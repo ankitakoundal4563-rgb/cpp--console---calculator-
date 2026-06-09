@@ -48,11 +48,6 @@ public:
             cout << "Error : 0 se divide nahi hota!" << endl;
         }
     }
-
-    void display() 
-{  
-        cout << "Current formula value: " << formula << endl;
-    }
 };
 
 int main() {
@@ -63,6 +58,5 @@ int main() {
     calc.div(20, 10);
     calc.div(20, 0);  
     calc.setformula(100);
-    calc.display();
     return 0;
 }
